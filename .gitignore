@@ -1,0 +1,15 @@
+*.ipynb_checkpoints
+
+data/*
+!data/figure_count_aoi.geojson
+!data/landmasses
+!data/reach_metrics.gpkg
+!data/seattle.geojson
+!data/unweaver
+
+artifacts/*
+!artifacts/seattle.osm.pbf
+!artifacts/seattle_landmass.geojson
+!artifacts/figures
+!artifacts/unweaver
+!/**/.gitkeep

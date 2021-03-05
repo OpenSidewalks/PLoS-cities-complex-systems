@@ -1,0 +1,13 @@
+{
+  "name": "cane",
+  "precalculate": true,
+  "static": {
+    "avoid_curbs": false,
+    "uphill": 0.12,
+    "downhill": 0.12,
+    "elevators": true,
+    "min_width": 2
+  },
+  "cost_function": "cost-dynamic.py",
+  "directions": "directions-dynamic.py"
+}

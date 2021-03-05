@@ -1,0 +1,31 @@
+{
+  "name": "dynamic",
+  "args": [
+    {
+      "name": "base_speed",
+      "type": "fields.Number(validate=validate.Range(0, 5))"
+    },
+    {
+      "name": "avoid_curbs",
+      "type": "fields.Boolean()"
+    },
+    {
+      "name": "uphill",
+      "type": "fields.Number(validate=validate.Range(0, 1))"
+    },
+    {
+      "name": "downhill",
+      "type": "fields.Number(validate=validate.Range(0, 1))"
+    },
+    {
+      "name": "min_width",
+      "type": "fields.Number(validate=validate.Range(0, 10))"
+    },
+    {
+      "name": "timestamp",
+      "type": "fields.Integer()"
+    }
+  ],
+  "cost_function": "cost-dynamic.py",
+  "directions": "directions-dynamic.py"
+}

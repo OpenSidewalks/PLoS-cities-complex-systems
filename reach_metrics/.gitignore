@@ -1,0 +1,10 @@
+# bytecode
+*.pyc
+__pycache__
+*.egg-info
+
+# Virtual environment
+venv
+
+# Test data
+tests

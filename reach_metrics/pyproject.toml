@@ -1,0 +1,34 @@
+[tool.poetry]
+name = "reach_metrics"
+version = "0.1.0"
+description = "Sidewalk reach metrics, network-based foundations for walkability metrics."
+authors = ["Nick Bolten"]
+license = "Apache-2.0"
+
+[tool.poetry.scripts]
+reach_metrics = "reach_metrics:cli.reach_metrics"
+
+[tool.poetry.dependencies]
+python = "^3.6"
+shapely = "^1.6"
+entwiner = {git = "https://github.com/nbolten/entwiner.git", rev="a3f6c33"}
+unweaver = {git = "https://github.com/nbolten/unweaver.git", rev="656c9be"}
+pre-commit = "^1.20.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+black = "18.9b0"
+pre-commit = "^1.20"
+dephell = "^0.8.3"
+
+[tool.black]
+line-length = 79
+exclude = """
+(
+  setup.py
+)
+"""
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"

@@ -1,0 +1,13 @@
+{
+  "name": "wheelchair",
+  "precalculate": true,
+  "static": {
+    "avoid_curbs": true,
+    "uphill": 0.0833,
+    "downhill": 0.1,
+    "elevators": true,
+    "min_width": 2
+  },
+  "cost_function": "cost-dynamic.py",
+  "directions": "directions-dynamic.py"
+}

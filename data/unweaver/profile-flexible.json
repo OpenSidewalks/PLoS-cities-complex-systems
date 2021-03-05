@@ -1,0 +1,27 @@
+{
+  "name": "flexible",
+  "args": [
+    {
+      "name": "base_speed",
+      "type": "fields.Number(validate=validate.Range(0, 5))"
+    },
+    {
+      "name": "avoid_curbs",
+      "type": "fields.Boolean()"
+    },
+    {
+      "name": "uphill",
+      "type": "fields.Number(validate=validate.Range(0, 1))"
+    },
+    {
+      "name": "downhill",
+      "type": "fields.Number(validate=validate.Range(0, 1))"
+    },
+    {
+      "name": "timestamp",
+      "type": "fields.Integer()"
+    }
+  ],
+  "cost_function": "cost-wheelchair.py",
+  "directions": "directions-wheelchair.py"
+}

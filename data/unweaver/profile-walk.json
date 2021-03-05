@@ -1,0 +1,13 @@
+{
+  "name": "walk",
+  "precalculate": true,
+  "static": {
+    "avoid_curbs": false,
+    "uphill": 0.20,
+    "downhill": 0.20,
+    "elevators": true,
+    "min_width": 2
+  },
+  "cost_function": "cost-dynamic.py",
+  "directions": "directions-dynamic.py"
+}
